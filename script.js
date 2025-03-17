@@ -5,10 +5,10 @@ const locationDisplay = document.getElementById('location');
 const temperatureDisplay = document.getElementById('temperature');
 const descriptionDisplay = document.getElementById('description');
 
-// Fonction pour récupérer les données météo depuis l'API
+
 async function fetchWeatherData(city) {
-    const apiKey = 'VOTRE_CLE_API'; // Remplacez par votre clé API OpenWeather
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=fr`;
+    const apiKey = '         '; 
+    const url = `https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}`;
 
     try {
         // On envoie la requête HTTP pour obtenir les données météo
